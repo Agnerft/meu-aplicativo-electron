@@ -1,0 +1,7 @@
+meu-aplicativo-electron@1.0.0 C:\Users\USER\front\meu-aplicativo-electron
+Ôö£ÔöÇÔöÇ babel-cli@6.26.0
+Ôö£ÔöÇÔöÇ electron-reload@2.0.0-alpha.1
+Ôö£ÔöÇÔöÇ electron@29.1.0
+Ôö£ÔöÇÔöÇ react-dom@18.2.0
+ÔööÔöÇÔöÇ react@18.2.0
+
