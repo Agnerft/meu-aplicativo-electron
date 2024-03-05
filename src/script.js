@@ -45,7 +45,6 @@ document.getElementById('executarEndpoint').addEventListener('click', function (
                     selectBtn.classList.add('btn-select')
                     selectBtn.textContent = 'Selecionar'
 
-
                     liElement.appendChild(selectBtn);
                     resultadoUl.appendChild(liElement);
                 }
@@ -74,7 +73,27 @@ document.getElementById('resultado').addEventListener('click', function (event) 
     if (event.target.classList.contains('btn-select')) {
 
         var sipValue = event.target.parentNode.textContent.replace('Selecionar', '').trim();
-
+        var cpfValue = document.getElementById('endpointInput').value;
         console.log(`Botão clicado é do sip: ${sipValue}`)
+        console.log(`Cnpj: ${cpfValue}`)
+
+
     }
+
+    urlAcess = `http://localhost:8080/${cpfValue}/${sipValue}/install/1`
+
+    console.log(urlAcess)
+
+    fetch(urlAcess, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }).then(response => response.json())
+        .then(data => { console.log(JSON.stringify(data)) })
+
+})
+
+document.getElementById('input-checkbox').addEventListener('click', function () {
+    console.log('clicando')
 })
