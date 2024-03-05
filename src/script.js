@@ -1,3 +1,7 @@
+
+var online = false;
+
+
 document.getElementById('executarEndpoint').addEventListener('click', function () {
     var endpointUrl = document.getElementById('endpointInput').value;
     var resultado = document.getElementById('resultado');
@@ -96,4 +100,30 @@ document.getElementById('resultado').addEventListener('click', function (event) 
 
 document.getElementById('input-checkbox').addEventListener('click', function () {
     console.log('clicando')
+
+    var line = document.getElementById('line')
+    var statusElemento = document.getElementById("status-indicator");
+
+    // var shell = new ActiveXObject("WScript.shell");
+    // shell.run('"C:\\Windows\\System32\\notepad.exe"', 1, true);
+    // const caminhoExe = '/instalador.exe'
+
+    online = !online;
+
+    line.innerHTML = online ? "Online" : "Offline";
+
+    if (online) {
+        statusElemento.classList.remove("offline");
+        statusElemento.classList.add("online");
+    } else {
+        statusElemento.classList.remove("online");
+        statusElemento.classList.add("offline");
+    }
+
+
+
 })
+
+function executarExe() {
+    require('electron').ipcRenderer.send('executar-exe');
+}

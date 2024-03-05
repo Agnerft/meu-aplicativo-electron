@@ -269,6 +269,40 @@ input:valid~.btn-box-x {
 
 /* The switch - the box around the slider */
 
+.div-switch-p {
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    width: 200px;
+}
+
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    /* Espaço entre o círculo e o texto */
+}
+
+.online {
+
+    background-color: lightgreen;
+    transition-delay: 150ms;
+    transition-property: background-color;
+
+}
+
+.offline {
+    background-color: lightsalmon;
+    transition-delay: 150ms;
+
+}
+
+
+
+
+
 
 
 .switch {
