@@ -22,12 +22,14 @@
 .header_h1 {
     /* color: red; */
     font-size: 40px;
+    pointer-events: none;
 }
 
 .header_img {
     /* background-color: pink; */
     width: 120px;
     height: auto;
+    pointer-events: none;
 }
 
 .ramais_h1 {
@@ -269,23 +271,23 @@ input:valid~.btn-box-x {
 
 /* The switch - the box around the slider */
 
-.div-switch-p {
-    /* background-color: red; */
+/* .div-switch-p {
+    
     position: absolute;
     display: flex;
     width: 200px;
-}
-
+} */
+/* 
 .status-indicator {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    /* Espaço entre o círculo e o texto */
-}
+    
+} */
 
-.online {
+/* .online {
 
     background-color: lightgreen;
     transition-delay: 150ms;
@@ -312,17 +314,17 @@ input:valid~.btn-box-x {
     display: inline-block;
     width: 4em;
     height: 2em;
-}
+} */
 
 /* Hide default HTML checkbox */
-.switch input {
+/* .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-}
+} */
 
 /* The slider */
-.slider {
+/* .slider {
     position: absolute;
     cursor: pointer;
     inset: 0;
@@ -330,9 +332,9 @@ input:valid~.btn-box-x {
     transition: 0.4s;
     border-radius: 0.5em;
     box-shadow: 0 0.2em #dfd9d9;
-}
+} */
 
-.slider:before {
+/* .slider:before {
     position: absolute;
     content: "";
     height: 1.5em;
@@ -343,15 +345,15 @@ input:valid~.btn-box-x {
     background-color: lightsalmon;
     transition: 0.4s;
     box-shadow: 0 0.4em #bcb4b4;
-}
+} */
 
-.slider:hover::before {
+/* .slider:hover::before {
     box-shadow: 0 0.2em #bcb4b4;
     bottom: 0.5em;
-}
-
+} */
+/* 
 input:checked+.slider:before {
     transform: translateX(2em);
     background: lightgreen;
 
-}
+} */

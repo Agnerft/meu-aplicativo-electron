@@ -99,16 +99,12 @@ document.getElementById('resultado').addEventListener('click', function (event) 
 })
 
 document.getElementById('input-checkbox').addEventListener('click', function () {
-    console.log('clicando')
-
+    // console.log('clicando')
+    let status
     var line = document.getElementById('line')
     var statusElemento = document.getElementById("status-indicator");
 
-    // var shell = new ActiveXObject("WScript.shell");
-    // shell.run('"C:\\Windows\\System32\\notepad.exe"', 1, true);
-    // const caminhoExe = '/instalador.exe'
 
-    online = !online;
 
     line.innerHTML = online ? "Online" : "Offline";
 
@@ -120,9 +116,9 @@ document.getElementById('input-checkbox').addEventListener('click', function () 
         statusElemento.classList.add("offline");
     }
 
-
-
 })
+
+
 
 function executarExe() {
     require('electron').ipcRenderer.send('executar-exe');
