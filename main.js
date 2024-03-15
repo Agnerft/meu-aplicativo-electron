@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron');
-const electronReload = require('electron-reload');
+// const electronReload = require('electron-reload');
 
 let mainWindow;
 
@@ -20,8 +20,8 @@ function createWindow() {
     });
 }
 
-app.whenReady().then(createWindow)
-    .then(electronReload(__dirname));
+app.whenReady().then(createWindow);
+// .then(electronReload(__dirname));
 
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
