@@ -21,17 +21,13 @@
     </div> -->
 
     <header class="header">
-        <h1 class="header_h1">Instalador de MicroSIP</h1>
+        <h1 class="header_h1">Instalador do MicroSIP</h1>
         <img class="header_img" src="./assets/img/logos.png" alt="icon" srcset="">
     </header>
 
-    <!-- <div class="inputGroup">
-        <input type="text" id="endpointInput">
-        <label for="cnpj">Buscar os Ramais</label>
-    </div> -->
     <div class="search-panels">
         <div class="search-group">
-            <input required="" id="endpointInput" class="input">
+            <input required="" id="endpointInput" class="input" type="number">
             <label class="enter-label">Buscar Ramais</label>
             <div class="btn-box">
                 <button class="btn-search" id="executarEndpoint">
@@ -55,11 +51,24 @@
         </div>
     </div>
 
+    <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+    </div>
     <h1 id="ramais_h1" class="ramais_h1"></h1>
     <div id="resultado">
     </div>
 
     <script src="./src/script.js"></script>
+    <script src="./src/btn-clear.js"></script>
+    <script src="./src/popup-events.js"></script>
 
 
 </body>
