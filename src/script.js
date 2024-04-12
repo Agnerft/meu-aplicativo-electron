@@ -1,7 +1,7 @@
 
+let dadosRecebidos;
 
 function executarEndPoint() {
-
 
     var endpointUrl = document.getElementById('endpointInput').value;
     var resultado = document.getElementById('resultado');
@@ -9,7 +9,7 @@ function executarEndPoint() {
     var banner = document.querySelector('.banter-loader');
     banner.style.display = 'block';
     var ramais_h1 = document.getElementById('ramais_h1');
-    var i = 800
+    var i = 500
     if (!endpointUrl) {
         console.error('Por favor, insira a URL do Endpoint.');
         document.querySelector('.banter-loader').style.display = 'block';
@@ -39,6 +39,7 @@ function executarEndPoint() {
     })
         .then(response => response.json())
         .then(data => {
+
             console.log(`Resposta do Endpoint: ${JSON.stringify(data)}`);
             cliente = data.json1.cliente;
             ramais_h1.textContent = `Ramais do Cliente ${cliente}`
@@ -73,9 +74,13 @@ function executarEndPoint() {
         .catch(error => {
             console.error(`Erro ao executar o Endpoint: ${error}`);
         });
+
+
 }
 
 
 
 
 document.getElementById('executarEndpoint').addEventListener('click', executarEndPoint);
+
+

@@ -1,0 +1,59 @@
+.ramais_h1 {
+    /* position: absolute; */
+    text-align: center;
+    /* align-items: center; */
+    width: 450px;
+    display: flex;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+
+.resultado {
+    /* background-color: red; */
+    padding: 10px;
+    /* width: 100%; */
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+
+}
+
+.resultado-list {
+    display: flex;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.resultado-item {
+    /* color: purple; */
+    width: 30%;
+    max-width: var(--max-width);
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    padding: 2px 2px;
+
+
+}
+
+.btn-select {
+    background-color: var(--color-active-input);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-select:hover {
+    background-color: var(--color-active-input);
+}

@@ -1,0 +1,20 @@
+.header {
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    --max-width: 600px;
+    height: 200px;
+}
+
+.header_h1 {
+    /* color: red; */
+    font-size: 40px;
+    pointer-events: none;
+}
+
+.header_img {
+    /* background-color: pink; */
+    width: 120px;
+    height: auto;
+    pointer-events: none;
+}
